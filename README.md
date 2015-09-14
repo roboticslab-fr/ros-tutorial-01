@@ -57,8 +57,10 @@ http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 
 	$ export | grep ROS
 	
-###Study the ~/.bashrc file
+###Study the .bashrc file
 Edit the ~/.bashrc file
+
+	$ gedit ~/.bashrc
 
 ###Study documentation on environment variables
 http://www.ros.org/wiki/ROS/EnvironmentVariables
