@@ -32,5 +32,30 @@ Catkin is the only buildsystem used for new development.
 
 Consult the ROS Wiki for further information: http://wiki.ros.org/catkin_or_rosbuild
 
+#ROS Configuration
+We performed some settings on our Workstations and TurtleBot2 Netbooks.
+Every workstations and netbooks are already configured with ROS HYDRO.
+Workspaces are configured to have catkin and rosbuild working alongside.
+
+More infos on catkin: http://wiki.ros.org/catkin/Tutorials
+
+The workspaces are :
+* for catkin ~/ros/hydro/catkin_ws
+* for rosbuild ~/ros/hydro/hydro_workspace
+
+After ROS installation, the last step is to configure the ROS environment. The **~/.bashrc** file has to be
+configured by adding lines to run correctly ROS commands. These lines launch a script that sets
+environment variables.
+##To Do
+* Study tutorial on ROS environment:
+http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+**!!! ROS environment is already set on the computer: do not creat again a workspace !!!**
+* Check environment variables that contain “ROS” value
+  $ export | grep ROS
+* Study the ~/.bashrc file
+* Study documentation on environment variables:
+http://www.ros.org/wiki/ROS/EnvironmentVariables
+(the first two sections in particular)
+
 
 
