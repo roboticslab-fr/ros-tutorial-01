@@ -46,16 +46,21 @@ The workspaces are :
 After ROS installation, the last step is to configure the ROS environment. The **~/.bashrc** file has to be
 configured by adding lines to run correctly ROS commands. These lines launch a script that sets
 environment variables.
+
 ##To Do
-* Study tutorial on ROS environment:
-http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+
+###Study tutorial on ROS environment
 **!!! ROS environment is already set on the computer: do not creat again a workspace !!!**
-* Check environment variables that contain “ROS” value
-  $ export | grep ROS
-* Study the ~/.bashrc file
-* Study documentation on environment variables:
+http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+
+###Check environment variables that contain “ROS” value
+
+	$ export | grep ROS
+	
+###Study the ~/.bashrc file
+Edit the ~/.bashrc file
+
+###Study documentation on environment variables
 http://www.ros.org/wiki/ROS/EnvironmentVariables
 (the first two sections in particular)
-
-
 
