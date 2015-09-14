@@ -1,6 +1,4 @@
-# ROS Tutorial 01
-
-# Introduction to ROS
+# ROS Tutorial 01 - Introduction to ROS
 ![ROS Hydro]
 (http://prerelease.ros.org/static/images/hydro.png)
 
