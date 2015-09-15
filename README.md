@@ -148,26 +148,27 @@ Check out other powerful tools based on *rqt*, a *Qt*-based framework for GUI de
 * http://wiki.ros.org/rqt
 * http://wiki.ros.org/rqt/Plugins
 
-##Useful Command Line tips
-* Locate a file
+##Useful Terminal Commands
+Locate a file
 
 	$ locate file.txt
 
-* Edit a file
-	* With a GUI:
+Edit a file with a GUI:
 	
 	$ sudo gedit file.txt
+or
 
 	$ sudo geany file.txt
 	
-	* Without a GUI (during SSH)
+Edit a file without a GUI (during SSH for example)
 	
 	$ sudo nano file.txt
 
-* Remote Terminal
+Remote Terminal
 	
-	$ ssh turtlebot@10.131.xxx.xxx
+	$ ssh login@IP
+	
+Remote Terminal with X display
+	
+	$ ssh -X login@IP
 
-* Remote Terminal with X display
-	
-	$ ssh -X turtlebot@10.131.xxx.xxx
