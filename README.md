@@ -147,3 +147,20 @@ Select *QwtPlot* in the plot options. (*rqt_plot* supersedes *rxplot*, which is 
 Check out other powerful tools based on *rqt*, a *Qt*-based framework for GUI development for ROS:
 * http://wiki.ros.org/rqt
 * http://wiki.ros.org/rqt/Plugins
+
+##Useful Command Line tips
+* Locate a file
+	$ locate file.txt
+
+* Edit a file
+	* With a GUI:
+	$ sudo gedit file.txt
+	$ sudo geany file.txt
+	* Without a GUI (during SSH)
+	$ sudo nano file.txt
+
+* Remote Terminal
+	$ ssh turtlebot@10.131.xxx.xxx
+
+* Remote Terminal with X display
+	$ ssh -X turtlebot@10.131.xxx.xxx
