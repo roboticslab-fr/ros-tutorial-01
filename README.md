@@ -1,4 +1,4 @@
-# ROS Tutorial 01 - Introduction to ROS
+# ROS Tutorial 01 - Introduction to ROS v1.3 - 09 2015
 ![ROS Hydro]
 (http://prerelease.ros.org/static/images/hydro.png)
 
