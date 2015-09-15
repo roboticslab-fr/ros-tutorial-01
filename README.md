@@ -86,10 +86,9 @@ Modifications in the ~/.bashrc file are taken into account by doing the followin
 ROS provides useful command line tools.
 
 ###To Do
-* Use *rospack* to obtain the list of packages and their dependences (example with *roscpp, sensor_msgs, gmapping*).
+* Use *rospack* to obtain the list of packages and the dependences of *roscpp, sensor_msgs, gmapping* packages.
 * Use *roscd* to quickly navigate from one package to another one.
-* Use *rosmsg* to obtain the list of messages and their description.
-* Find the messages description in their packages (example with sensor_msgs/LaserScan, nav_msgs/Odom ... ).
+* Use *rosmsg* to obtain the list of messages and find the messages description of the following packages: *sensor_msgs/LaserScan, nav_msgs/Odom*...
 * Study messages documentation on the package website (example with http://wiki.ros.org/sensor_msgs )
 * Study general information on messages on the ROS wiki website - http://wiki.ros.org/msg
 
