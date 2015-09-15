@@ -64,3 +64,19 @@ Edit the ~/.bashrc file
 http://www.ros.org/wiki/ROS/EnvironmentVariables
 (the first two sections in particular)
 
+##Informations
+Several versions of ROS can eventually coexist (GROOVY & HYDRO for example) and be selected using scripts
+(be careful not to mix the ROS distributions).
+
+Example of ROS distribution selection in the ~/.bashrc file:
+
+	#added lines for ROS:
+	#You can switch between GROOVY & HYDRO by activating one set of source and select ROS_DISTRO=xxxx
+	##ROS GROOVY
+	ROS_DISTRO=groovy
+	source /opt/ros/groovy/setup.bash
+	##ROS HYDRO
+	#ROS_DISTRO=hydro
+	#source /opt/ros/hydro/setup.bash
+
+ROS packages are searched and detected only from ROS_PACKAGE_PATH value, which often involves adding a package path to this variable in the ~/.bashrc file.
