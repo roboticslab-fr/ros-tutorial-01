@@ -64,7 +64,7 @@ Edit the ~/.bashrc file
 http://www.ros.org/wiki/ROS/EnvironmentVariables
 (the first two sections in particular)
 
-##Informations
+##Additional Informations
 Several versions of ROS can eventually coexist (GROOVY & HYDRO for example) and be selected using scripts
 (be careful not to mix the ROS distributions).
 
@@ -80,3 +80,23 @@ Example of ROS distribution selection in the ~/.bashrc file:
 	#source /opt/ros/hydro/setup.bash
 
 ROS packages are searched and detected only from ROS_PACKAGE_PATH value, which often involves adding a package path to this variable in the ~/.bashrc file.
+
+Modifications in the ~/.bashrc file are taken into account by doing the following:
+* close the terminal
+* reopen a new shell (terminal window)
+
+##Exploration
+ROS provides useful command line tools.
+
+###To Do
+* Use rospack to obtain the list of packages and their dependences (example with roscpp, sensor_msgs, gmapping).
+* Use roscd to quickly navigate from one package to another one.
+* Use rosmsg to obtain the list of messages and their description.
+* Find the messages description in their packages (example with sensor_msgs/LaserScan, nav_msgs/Odom ... ).
+* Study messages documentation on the package website (example with http://wiki.ros.org/sensor_msgs )
+* Study general information on messages on the ROS wiki website - http://wiki.ros.org/msg
+
+###Informations
+Messages are defined in the msg folder in a package. Their definition has to be compiled to make them useable.
+Messages documentation provided by a package is described on the package website.
+
