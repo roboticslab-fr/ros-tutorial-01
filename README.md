@@ -121,3 +121,29 @@ ROS provides also two tools to analyse working nodes and used topics (published 
 
 ###Additional Informations 
 * */rosout* is part of the roscore that agregates log messages. It is restarted automatically if it is killed.
+
+##Visualisation
+ROS provides visualisation tools for standard data analysis:
+* rqt_plot - http://wiki.ros.org/rqt_plot
+* RVIZ - http://wiki.ros.org/rviz
+
+###To Do
+* Use simulation time instead of computer's system clock – http://wiki.ros.org/Clock
+* Play the bag file *summit_outdoor.bag* with forcing the clock to be published
+* Use *rostopic* to display the “x” value of the robot position in the */odom* message
+* With the same bag file, use *rqt_plot* to display the same value, try to display several value in the same time.
+Select *QwtPlot* in the plot options. (*rqt_plot* supersedes *rxplot*, which is deprecated since ROS GROOVY)
+* Start *rviz*, from the *rviz* package (use *rosrun* command) to visualize the following topics: 
+	*/tf*
+	*/scan* 
+* Study messages that *rviz* can display and related options. Study available *rviz* menus.
+
+###Advanced
+* Check global options of *rviz* – study in particular the *Fixed Frame* settings.
+* Save a configuration file.
+* Set a *default* config. file.
+
+### Additional Informations
+Check out other powerful tools based on *rqt*, a *Qt*-based framework for GUI development for ROS:
+* http://wiki.ros.org/rqt
+* http://wiki.ros.org/rqt/Plugins
