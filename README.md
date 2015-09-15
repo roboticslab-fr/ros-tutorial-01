@@ -150,17 +150,24 @@ Check out other powerful tools based on *rqt*, a *Qt*-based framework for GUI de
 
 ##Useful Command Line tips
 * Locate a file
+
 	$ locate file.txt
 
 * Edit a file
 	* With a GUI:
+	
 	$ sudo gedit file.txt
+
 	$ sudo geany file.txt
+	
 	* Without a GUI (during SSH)
+	
 	$ sudo nano file.txt
 
 * Remote Terminal
+	
 	$ ssh turtlebot@10.131.xxx.xxx
 
 * Remote Terminal with X display
+	
 	$ ssh -X turtlebot@10.131.xxx.xxx
