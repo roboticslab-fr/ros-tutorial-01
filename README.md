@@ -89,14 +89,35 @@ Modifications in the ~/.bashrc file are taken into account by doing the followin
 ROS provides useful command line tools.
 
 ###To Do
-* Use rospack to obtain the list of packages and their dependences (example with roscpp, sensor_msgs, gmapping).
-* Use roscd to quickly navigate from one package to another one.
-* Use rosmsg to obtain the list of messages and their description.
+* Use *rospack* to obtain the list of packages and their dependences (example with *roscpp, sensor_msgs, gmapping*).
+* Use *roscd* to quickly navigate from one package to another one.
+* Use *rosmsg* to obtain the list of messages and their description.
 * Find the messages description in their packages (example with sensor_msgs/LaserScan, nav_msgs/Odom ... ).
 * Study messages documentation on the package website (example with http://wiki.ros.org/sensor_msgs )
 * Study general information on messages on the ROS wiki website - http://wiki.ros.org/msg
 
 ###Informations
-Messages are defined in the msg folder in a package. Their definition has to be compiled to make them useable.
-Messages documentation provided by a package is described on the package website.
+* Messages are defined in the *msg* folder in a package. Their definition has to be compiled to make them useable.
+* Messages documentation provided by a package is described on the package website.
 
+##Bags
+ROS provides a powerful tool to record messages in order to replay them later. *rosbag* tool is able to record and play a full working ROS sequence.
+###To Do
+* Study available *rosbag* commands
+* Extract the following informations on the provided bag files:
+	* duration, start and end time
+	* messages types and amount
+* Replay one bag file.
+* While a bag file is being replayed, record a new bag file with only selected topics
+* Use and study the *rqt_bag tool* (*rqt_bag* supersedes *rxbag*, which is deprecated since ROS GROOVY)
+
+##Topics and nodes
+ROS provides also two tools to analyse working nodes and used topics (published or suscribed).
+###To Do
+* While a bag file is being replayed, use *rosnode* command to get the list of working nodes and related informations.
+* Use *rosnode ping* command to test nodes.
+* Kill /rosbag then /rosout.
+* While a bag file is being replayed on the one hand, and on the other hand some topics are recorded, use *rqt_graph* to study the ROS computation graph (*rqt_graph* supersedes *rxgraph*, which is deprecated since ROS GROOVY).
+
+###Additional Informations 
+* */rosout* is part of the roscore that agregates log messages. It is restarted automatically if it is killed.
